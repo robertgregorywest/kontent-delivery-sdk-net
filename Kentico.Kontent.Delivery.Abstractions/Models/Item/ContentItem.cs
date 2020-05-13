@@ -1,6 +1,7 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using Kentico.Kontent.Delivery.Abstractions.ContentLinks;
 
@@ -9,6 +10,7 @@ namespace Kentico.Kontent.Delivery.Abstractions
     /// <summary>
     /// Represents a content item.
     /// </summary>
+    [DebuggerDisplay("{nameof(System.Id)} = {System.Id}, {nameof(System.Codename)} = {System.Codename}")]
     public sealed class ContentItem
     {
         private readonly JToken _source;
